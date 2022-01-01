@@ -1,0 +1,18 @@
+.dialogs{
+  display: grid;
+  margin: auto;
+  grid-template-areas:"n m";
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 5px;
+}
+
+.dialogNames{
+  grid-area: n;
+}
+.dialog{
+  padding: 10px;
+}
+
+.messages{
+  grid-area: m;
+}

@@ -1,0 +1,14 @@
+.myinfo{
+  display: grid;
+  grid-template-areas:
+  "1 2";
+  grid-template-rows: 1fr;
+  grid-template-columns: 220px 1fr;
+  grid-gap: 7px;
+}
+
+.myinfo img{
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+}

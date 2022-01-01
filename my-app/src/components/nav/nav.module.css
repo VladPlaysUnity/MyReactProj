@@ -1,0 +1,25 @@
+.nav{
+  grid-area: n;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 93, 73);
+  border-radius: 10px;
+}
+.nav a{
+  width: 200px;
+  color: white;
+  margin-left: 20px;
+  line-height: 50px;
+  font-family: cursive;
+  font-size: 25px;
+}
+
+.nav a:hover{
+  background-color: white;
+  color: rgb(255, 93, 73);
+}
+
+.active{
+  background-color: rgb(165, 226, 153);
+  color: rgb(255, 93, 73);
+}
