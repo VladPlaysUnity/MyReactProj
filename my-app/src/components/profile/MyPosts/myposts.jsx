@@ -1,12 +1,10 @@
 import s from './myposts.module.css';
 import Post from './Post/post.jsx';
 
-const MyPosts = () =>{
-
-   let posts = [
-     {id:1, message:"Hi, how are you?"},
-     {id:1, message:"Fine, what about you?"},
-   ];
+const MyPosts = (props) =>{
+   let post_components = props.posts.map((post)=>{
+     return (<Post message={post.message} />)
+   });
 
   return (
     <div className={s.myposts}>
@@ -18,8 +16,7 @@ const MyPosts = () =>{
         <button>Send</button>
       </div>
       <div className={s.posts}>
-        <Post message={posts[0].message} />
-        <Post message={posts[1].message} />
+        {post_components}
       </div>
     </div>
   );

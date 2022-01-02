@@ -9,7 +9,7 @@ import News from './components/news/news.jsx';
 import Music from './components/music/music.jsx';
 import Settings from './components/settings/settings.jsx';
 
-const App = () => {
+const App = (props) => {
   return (
     <Router>
       <div className='app-wrapper'>
@@ -17,8 +17,8 @@ const App = () => {
         <Nav />
         <div className="app-wrapper-content">
           <Routes>
-            <Route path='/dialogs/*' element={<Dialogs/>}/>
-            <Route path='/profile/*' element={<Profile/>}/>
+            <Route path='/dialogs/*' element={<Dialogs dialogs={props.dialogs} messages={props.messages}/>}/>
+            <Route path='/profile/*' element={<Profile posts={props.posts}/>}/>
             <Route path='/news/*' element={<News/>}/>
             <Route path='/music/*' element={<Music/>}/>
             <Route path='/settings/*' element={<Settings/>}/>

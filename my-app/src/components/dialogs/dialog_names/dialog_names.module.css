@@ -1,0 +1,16 @@
+.dialog_name a{
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  text-align: left;
+  font-family: cursive;
+  font-size: 17px;
+  color: black;
+  background-color: rgb(252, 227, 138);
+}
+
+.dialog_name a:hover{
+  background-color: rgb(248, 255, 134);
+}
