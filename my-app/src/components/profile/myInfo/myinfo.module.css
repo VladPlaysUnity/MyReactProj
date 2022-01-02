@@ -1,14 +1,35 @@
-.myinfo{
+.myinfo img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.mydescr{
   display: grid;
   grid-template-areas:
   "1 2";
   grid-template-rows: 1fr;
   grid-template-columns: 220px 1fr;
-  grid-gap: 7px;
+  grid-gap: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.myinfo img{
+.mydescr img{
   width: 200px;
   height: 200px;
-  margin-left: 10px;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.text span{
+  display: inline-block;
+  color: red;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3px 6px 3px;
+  text-align: center;
+}
+
+.item{
+  margin-bottom: 15px;
 }

@@ -4,6 +4,10 @@
 }
 
 .myposts textarea{
-  width: 900px;
+  width: 950px;
   height: 100px;
+}
+
+.posts{
+  margin-top: 20px;
 }

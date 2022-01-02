@@ -2,18 +2,24 @@ import s from './myposts.module.css';
 import Post from './Post/post.jsx';
 
 const MyPosts = () =>{
+
+   let posts = [
+     {id:1, message:"Hi, how are you?"},
+     {id:1, message:"Fine, what about you?"},
+   ];
+
   return (
     <div className={s.myposts}>
       My posts
       <div>
-        <textarea id='ta'></textarea>
+        <textarea></textarea>
       </div>
       <div>
-        <button> Send </button>
+        <button>Send</button>
       </div>
-      <div>
-        <Post message='Hi, how are you?'/>
-        <Post message='Fine, what about you?'/>
+      <div className={s.posts}>
+        <Post message={posts[0].message} />
+        <Post message={posts[1].message} />
       </div>
     </div>
   );
