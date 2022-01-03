@@ -4,6 +4,7 @@
   grid-template-areas:"n m";
   grid-template-columns: 1fr 5fr;
   grid-gap: 5px;
+  height: 100%;
 }
 
 .dialogNames{
@@ -14,4 +15,7 @@
 
 .messages{
   grid-area: m;
+  background-color: rgb(255, 229, 204);
+  margin: 5px;
+  border-radius: 10px;
 }

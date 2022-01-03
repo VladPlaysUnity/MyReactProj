@@ -1,0 +1,18 @@
+.message{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 12fr 4fr;
+
+}
+
+.message img{
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.message .content{
+  background-color: white;
+  border-radius: 5px;
+  padding: 3%;
+}

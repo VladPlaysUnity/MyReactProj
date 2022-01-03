@@ -1,0 +1,43 @@
+.friends{
+  width: 90%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 131, 131);
+  border-radius: 6px;
+}
+
+.friends .tex{
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.friends .icons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 2px;
+}
+
+.friends .icons .icon a{
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin: 3px;
+  text-align: center;
+  background-color: none;
+  font-size: 16px;
+  color:red;
+  text-decoration: none;
+}
+
+.friends .icons .icon a img{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 131, 131);
+}
