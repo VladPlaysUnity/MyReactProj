@@ -1,8 +1,9 @@
 .dialogs{
   display: grid;
   margin: auto;
-  grid-template-areas:"n m";
+  grid-template-areas:"n m" "n msl";
   grid-template-columns: 1fr 5fr;
+  grid-template-rows: 4fr 1fr;
   grid-gap: 5px;
   height: 100%;
 }
@@ -18,4 +19,16 @@
   background-color: rgb(255, 229, 204);
   margin: 5px;
   border-radius: 10px;
+}
+
+.message_sender_line{
+  grid-area: msl;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  grid-gap: 0px;
+  background-color: rgb(255, 229, 204);
+}
+
+.message_sender_line button{
+
 }

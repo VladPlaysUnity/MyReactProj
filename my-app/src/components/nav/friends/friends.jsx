@@ -2,7 +2,7 @@ import s from './friends.module.css';
 import {NavLink} from "react-router-dom";
 
 const Friends = (props) =>{
-  console.log(props.friends);
+  
   let friends = props.friends.map(item => <div className={s.icon}><NavLink to={'/friends/' + item.name}><img src={item.img}/></NavLink></div>)
 
   return(
