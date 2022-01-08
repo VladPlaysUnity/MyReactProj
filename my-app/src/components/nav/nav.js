@@ -12,7 +12,7 @@ const Nav = (props) => {
     <div><br/></div>
     <div><NavLink to="/settings" className={ navData => navData.isActive ? s.active : s.item }>Settings</NavLink></div>
     <div><br/></div>
-    <div><Friends friends={props.state.friends}/></div>
+    <div><Friends friends={props.sideBar.friends}/></div>
   </nav>
 );
 };
