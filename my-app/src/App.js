@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Nav from './components/nav/nav.js';
 import Profile from './components/profile/profile.jsx';
 import Header from './components/header/header.js';
-import Dialogs from './components/dialogs/dialogs.jsx';
+import DialogsContainer from './components/dialogs/dialogsContainer.jsx';
 import News from './components/news/news.jsx';
 import Music from './components/music/music.jsx';
 import Settings from './components/settings/settings.jsx';
@@ -14,11 +14,11 @@ const App = (props) => {
     <Router>
       <div className='app-wrapper'>
         <Header />
-        <Nav sideBar={props.state.sideBar}/>
+        <Nav sideBar={props.store.getState().sideBar}/>
         <div className="app-wrapper-content">
           <Routes>
-            <Route path='/dialogs/*' element={<Dialogs page={props.state.dialogsPage} dispatch={props.dispatch}/>}/>
-            <Route path='/profile/*' element={<Profile profilePage={props.state.profilePage} dispatch={props.dispatch}/>}/>
+            <Route path='/dialogs/*' element={<DialogsContainer store={props.store}/>}/>
+            <Route path='/profile/*' element={<Profile store={props.store}/>}/>
             <Route path='/news/*' element={<News/>}/>
             <Route path='/music/*' element={<Music/>}/>
             <Route path='/settings/*' element={<Settings/>}/>
