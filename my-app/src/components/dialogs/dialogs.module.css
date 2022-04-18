@@ -3,7 +3,7 @@
   margin: auto;
   grid-template-areas:"n m" "n msl";
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 4fr 50px;
   grid-gap: 5px;
   height: 100%;
 }

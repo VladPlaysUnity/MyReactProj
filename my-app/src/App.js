@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Nav from './components/nav/nav.js';
+import NavContainer from './components/nav/navContainer.jsx';
 import Profile from './components/profile/profile.jsx';
 import Header from './components/header/header.js';
 import DialogsContainer from './components/dialogs/dialogsContainer.jsx';
@@ -14,11 +14,11 @@ const App = (props) => {
     <Router>
       <div className='app-wrapper'>
         <Header />
-        <Nav sideBar={props.store.getState().sideBar}/>
+        <NavContainer/>
         <div className="app-wrapper-content">
           <Routes>
-            <Route path='/dialogs/*' element={<DialogsContainer store={props.store}/>}/>
-            <Route path='/profile/*' element={<Profile store={props.store}/>}/>
+            <Route path='/dialogs/*' element={<DialogsContainer />}/>
+            <Route path='/profile/*' element={<Profile />}/>
             <Route path='/news/*' element={<News/>}/>
             <Route path='/music/*' element={<Music/>}/>
             <Route path='/settings/*' element={<Settings/>}/>
